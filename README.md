@@ -17,33 +17,75 @@
 
 Before you can start using the **YouLikeHits YTbot**, you need to ensure you have the necessary libraries installed. Follow these steps to set up the environment:
 
-1. Clone or download this repository to your local machine.
+To download and install Visual Studio Code (VS Code), follow these step-by-step instructions for Windows, macOS, or Linux:
 
-   ```bash
-   git clone https://github.com/Slick4201/YouLikeHits-YTbot.git
+### For Windows:
+
+1. Open your web browser and go to the official Visual Studio Code website at https://code.visualstudio.com/.
+
+2. On the homepage, you'll see a prominent "Download for Windows" button. Click on it.
+
+3. Your browser will start downloading the VS Code installer (an `.exe` file) automatically.
+
+4. Once the download is complete, locate the downloaded file (usually in your Downloads folder) and double-click on it to run the installer.
+
+5. The installer will guide you through the installation process. You can choose the installation options such as the installation location and whether you want to add VS Code to the PATH environment variable (recommended).
+
+6. Follow the on-screen instructions to complete the installation.
+
+7. After the installation is complete, you can launch Visual Studio Code by searching for it in the Start menu or by double-clicking the VS Code shortcut on your desktop.
+
+### For macOS:
+
+1. Open your web browser and go to the official Visual Studio Code website at https://code.visualstudio.com/.
+
+2. On the homepage, you'll see a prominent "Download for Mac" button. Click on it.
+
+3. Your browser will start downloading the VS Code installer (a `.zip` file) automatically.
+
+4. Once the download is complete, locate the downloaded file (usually in your Downloads folder) and double-click on it to unzip the archive.
+
+5. Drag the Visual Studio Code application into your "Applications" folder to install it.
+
+6. Open Spotlight (press `Cmd + Space`) and type "Visual Studio Code" to launch the application.
+
+### For Linux (Ubuntu/Debian):
+
+1. Open a terminal window.
+
+2. Add the Microsoft repository to your system by running the following command:
+   
+   ```
+   sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
    ```
 
-2. Navigate to the project directory.
-
-   ```bash
-   cd YouLikeHits-YTbot
+3. Download and install the Microsoft GPG key with this command:
+   
+   ```
+   wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
    ```
 
-3. Install the required Python libraries using `pip`.
-
-   ```bash
-   pip install -r requirements.txt
+4. Update your package list:
+   
    ```
+   sudo apt update
+   ```
+
+5. Install Visual Studio Code by running this command:
+   
+   ```
+   sudo apt install code
+   ```
+
+6. After the installation is complete, you can launch Visual Studio Code by typing `code` in the terminal or searching for it in your application menu.
+
+That's it! You have successfully downloaded and installed Visual Studio Code on your operating system. You can now start using it to write code and develop software.
 
 ## Usage
 
-1. Configure the bot: Open the `config.py` file and provide your YouLikeHits credentials and configure the bot settings as needed.
+1. Configure the bot: Open the `YouLikeHits-YTbot.py` file and provide your YouLikeHits credentials at the bottom and configure the bot settings as needed.
 
 2. Run the bot: Execute the `YouLikeHitsYTbot.py` script.
-
-   ```bash
-   python YouLikeHitsYTbot.py
-   ```
 
 3. Sit back and relax: The bot will automatically perform actions on the YouLikeHits website to earn points for you, 24/7.
 
@@ -53,7 +95,7 @@ Before you can start using the **YouLikeHits YTbot**, you need to ensure you hav
 
 - Time-saving: The bot runs in the background, allowing you to earn points while you focus on other tasks.
 
-- Customizable: You can configure the bot's behavior by adjusting settings in the `config.py` file.
+- Customizable: You can configure the bot's behavior by adjusting settings in the `YouLikeHits-YTbot` file.
 
 ## Disclaimer
 
